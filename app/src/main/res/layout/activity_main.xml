@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Плашка с общим счётом для Олега и Лии -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/score_person1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Олег: 0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="#D1C4E9"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:elevation="4dp" />
+
+        <TextView
+            android:id="@+id/score_person2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Лия: 0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="#C5CAE9"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Блок для Олега -->
+    <TextView
+        android:id="@+id/person1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Олег"
+        android:textSize="24sp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_plus_person1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button_minus_person1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+    </LinearLayout>
+
+    <!-- Блок для Лии -->
+    <TextView
+        android:id="@+id/person2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Лия"
+        android:textSize="24sp"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_plus_person2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button_minus_person2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+    </LinearLayout>
+
+</LinearLayout>
